@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import sad from "../../Sad";
-import firebase from "../../config";
+import firebase from "../../firebase-config";
 import { useHistory } from "react-router-dom";
 
 function ConferencePage() {

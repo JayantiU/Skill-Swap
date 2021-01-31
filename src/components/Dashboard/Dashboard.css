@@ -1,11 +1,7 @@
 html,
-body {
+.flash {
   margin: 0;
   padding: 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .landing-container {
@@ -13,7 +9,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 
 .video_button {
@@ -56,12 +51,11 @@ body {
   background: #d9a4e1;
 }
 
-.start {
+.flash {
   background: url(./dash.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-position: bottom;
   background-size: cover;
   height: 100vh;
   width: 100vw;

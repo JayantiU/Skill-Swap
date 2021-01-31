@@ -1,4 +1,5 @@
 import React from "react";
+import firebase from "../../firebase-config";
 import Checkbox from "@material-ui/core/Checkbox";
 import LoginBackground from "./Preferences.png";
 import { makeStyles } from "@material-ui/core/styles";
@@ -8,6 +9,7 @@ import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import { Link } from "react-router-dom";
 import "./PreferencesPage.css";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -25,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 export default function CheckboxesGroup() {
   const classes = useStyles();
   const [state, setState] = React.useState({
-    WebDevelopment1: true,
+    WebDevelopment1: false,
     GameDevelopment1: false,
     MobileDevelopment1: false,
     ARVR1: false,
@@ -50,57 +52,152 @@ export default function CheckboxesGroup() {
     Communication2: false,
     Music2: false,
   });
+  const handleChange = async (event) => {
+    var email = null;
 
-  const handleChange = (event) => {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        email = user.email;
+      }
+    });
     setState({ ...state, [event.target.name]: event.target.checked });
+    const db = await firebase.firestore();
+    if (true) {
+      setState({ ...state, [event.target.name]: event.target.checked });
+
+      db.collection("preferences").doc(`${email}`).set(state);
+      const citiesRef = db.collection("citipreferenceses");
+      const snapshot = await citiesRef.where("capital", "==", false).get();
+    }
   };
-  
-    const {WebDevelopment1, GameDevelopment1, MobileDevelopment1, ARVR1, Cybersecurity1, MachineLearningAndAI1, InterviewSkills1, JobApplications1,WorkplaceEtiquette1, Productivity1, Communication1, Music1,
-           WebDevelopment2, GameDevelopment2, MobileDevelopment2, ARVR2, Cybersecurity2, MachineLearningAndAI2, InterviewSkills2, JobApplications2, WorkplaceEtiquette2, Productivity2, Communication2, Music2} = state;
-  
-return(
-<div style={{
+
+  const {
+    WebDevelopment1,
+    GameDevelopment1,
+    MobileDevelopment1,
+    ARVR1,
+    Cybersecurity1,
+    MachineLearningAndAI1,
+    InterviewSkills1,
+    JobApplications1,
+    WorkplaceEtiquette1,
+    Productivity1,
+    Communication1,
+    Music1,
+    WebDevelopment2,
+    GameDevelopment2,
+    MobileDevelopment2,
+    ARVR2,
+    Cybersecurity2,
+    MachineLearningAndAI2,
+    InterviewSkills2,
+    JobApplications2,
+    WorkplaceEtiquette2,
+    Productivity2,
+    Communication2,
+    Music2,
+  } = state;
+
+  return (
+    <div
+      style={{
         backgroundImage: `url(${LoginBackground})`,
-        width: '100vw',
-        height: '100vh',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        }}>
-  <div className={classes.root}>
-      <FormControl component="fieldset" className={classes.formControl}>
-        <FormLabel component="legend">Development</FormLabel>
-        <FormGroup>
-          <FormControlLabel
-            control={<Checkbox checked={WebDevelopment1} onChange={handleChange} name="WebDevelopment1" color="primary"/>}
-            label="Web Development"
-          />
-          <FormControlLabel
-            control={<Checkbox checked={GameDevelopment1} onChange={handleChange} name="GameDevelopment1" color="primary"/>}
-            label="Game Development"
-          />
-          <FormControlLabel
-            control={<Checkbox checked={MobileDevelopment1} onChange={handleChange} name="MobileDevelopment1" color="primary"/>}
-            label="Mobile Development"
-          />
-        </FormGroup>
-      </FormControl>
-      <FormControl component="fieldset" className={classes.formControl}>
-        <FormLabel component="legend">Specialisations</FormLabel>
-        <FormGroup>
-          <FormControlLabel
-            control={<Checkbox checked={ARVR1} onChange={handleChange} name="ARVR1" color="primary"/>}
-            label="AR/VR"
-          />
-          <FormControlLabel
-            control={<Checkbox checked={Cybersecurity1} onChange={handleChange} name="Cybersecurity1" color="primary"/>}
-            label="Cybersecurity"
-          />
-          <FormControlLabel
-            control={<Checkbox checked={MachineLearningAndAI1} onChange={handleChange} name="MachineLearningAndAI1" color="primary"/>}
-            label="Machine Learning and AI"
-          />
-        </FormGroup>
-      </FormControl>
+        width: "100vw",
+        height: "100vh",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className={classes.root}>
+        <FormControl component="fieldset" className={classes.formControl}>
+          <FormLabel component="legend">Development</FormLabel>
+          <FormGroup>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={WebDevelopment1}
+                  onChange={handleChange}
+                  name="WebDevelopment1"
+                  color="primary"
+                />
+              }
+              label="Web Development"
+            >
+              <div>
+                {" "}
+                control=
+                {
+                  <Checkbox
+                    checked={WebDevelopment1}
+                    onChange={handleChange}
+                    name="WebDevelopment1"
+                    color="primary"
+                  />
+                }
+              </div>
+            </FormControlLabel>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={GameDevelopment1}
+                  onChange={handleChange}
+                  name="GameDevelopment1"
+                  color="primary"
+                />
+              }
+              label="Game Development"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={MobileDevelopment1}
+                  onChange={handleChange}
+                  name="MobileDevelopment1"
+                  color="primary"
+                />
+              }
+              label="Mobile Development"
+            />
+          </FormGroup>
+        </FormControl>
+        <FormControl component="fieldset" className={classes.formControl}>
+          <FormLabel component="legend">Specialisations</FormLabel>
+          <FormGroup>
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={ARVR1}
+                  onChange={handleChange}
+                  name="ARVR1"
+                  color="primary"
+                />
+              }
+              label="AR/VR"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={Cybersecurity1}
+                  onChange={handleChange}
+                  name="Cybersecurity1"
+                  color="primary"
+                />
+              }
+              label="Cybersecurity"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={MachineLearningAndAI1}
+                  onChange={handleChange}
+                  name="MachineLearningAndAI1"
+                  color="primary"
+                />
+              }
+              label="Machine Learning and AI"
+            />
+          </FormGroup>
+        </FormControl>
 
         <FormControl component="fieldset" className={classes.formControl}>
           <FormLabel component="legend">Technical Skills</FormLabel>
