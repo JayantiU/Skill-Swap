@@ -1,0 +1,777 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/components/PreferencesPage/PreferencesPage.js":
+/*!***********************************************************!*\
+  !*** ./src/components/PreferencesPage/PreferencesPage.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CheckboxesGroup; });
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Checkbox */ "./node_modules/@material-ui/core/esm/Checkbox/index.js");
+/* harmony import */ var _Preferences_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Preferences.png */ "./src/components/PreferencesPage/Preferences.png");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony import */ var _material_ui_core_FormLabel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/FormLabel */ "./node_modules/@material-ui/core/esm/FormLabel/index.js");
+/* harmony import */ var _material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/FormControl */ "./node_modules/@material-ui/core/esm/FormControl/index.js");
+/* harmony import */ var _material_ui_core_FormGroup__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/FormGroup */ "./node_modules/@material-ui/core/esm/FormGroup/index.js");
+/* harmony import */ var _material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/FormControlLabel */ "./node_modules/@material-ui/core/esm/FormControlLabel/index.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+
+
+var _jsxFileName = "C:\\Monogram\\Skill-Swap\\src\\components\\PreferencesPage\\PreferencesPage.js",
+    _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+
+
+const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__["makeStyles"])(theme => ({
+  root: {
+    display: 'flex'
+  },
+  formControl: {
+    margin: theme.spacing(5),
+    textAlign: 'left',
+    top: '210px',
+    left: '150px',
+    right: '300px',
+    bottom: '350px'
+  }
+}));
+function CheckboxesGroup() {
+  _s();
+
+  const classes = useStyles();
+  const [state, setState] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState({
+    WebDevelopment1: true,
+    GameDevelopment1: false,
+    MobileDevelopment1: false,
+    ARVR1: false,
+    Cybersecurity1: false,
+    MachineLearningAndAI1: false,
+    InterviewSkills1: false,
+    JobApplications1: false,
+    WorkplaceEtiquette1: false,
+    Productivity1: false,
+    Communication1: false,
+    Music1: false,
+    WebDevelopment2: false,
+    GameDevelopment2: false,
+    MobileDevelopment2: false,
+    ARVR2: false,
+    Cybersecurity2: false,
+    MachineLearningAndAI2: false,
+    InterviewSkills2: false,
+    JobApplications2: false,
+    WorkplaceEtiquette2: false,
+    Productivity2: false,
+    Communication2: false,
+    Music2: false
+  });
+
+  const handleChange = event => {
+    setState({ ...state,
+      [event.target.name]: event.target.checked
+    });
+  };
+
+  const {
+    WebDevelopment1,
+    GameDevelopment1,
+    MobileDevelopment1,
+    ARVR1,
+    Cybersecurity1,
+    MachineLearningAndAI1,
+    InterviewSkills1,
+    JobApplications1,
+    WorkplaceEtiquette1,
+    Productivity1,
+    Communication1,
+    Music1,
+    WebDevelopment2,
+    GameDevelopment2,
+    MobileDevelopment2,
+    ARVR2,
+    Cybersecurity2,
+    MachineLearningAndAI2,
+    InterviewSkills2,
+    JobApplications2,
+    WorkplaceEtiquette2,
+    Productivity2,
+    Communication2,
+    Music2
+  } = state;
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+    style: {
+      backgroundImage: `url(${_Preferences_png__WEBPACK_IMPORTED_MODULE_3__["default"]})`,
+      width: '100vw',
+      height: '100vh',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      webkitbackgroundsize: 'cover',
+      mozbackgroundsize: 'cover',
+      obackgroundsize: 'cover'
+    },
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      className: classes.root,
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "fieldset",
+        className: classes.formControl,
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormLabel__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          component: "legend",
+          children: "Development"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 75,
+          columnNumber: 9
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormGroup__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: WebDevelopment1,
+              onChange: handleChange,
+              name: "WebDevelopment1",
+              color: "primary"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 78,
+              columnNumber: 22
+            }, this),
+            label: "Web Development"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 77,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: GameDevelopment1,
+              onChange: handleChange,
+              name: "GameDevelopment1",
+              color: "primary"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 82,
+              columnNumber: 22
+            }, this),
+            label: "Game Development"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 81,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: MobileDevelopment1,
+              onChange: handleChange,
+              name: "MobileDevelopment1",
+              color: "primary"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 86,
+              columnNumber: 22
+            }, this),
+            label: "Mobile Development"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 85,
+            columnNumber: 11
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 76,
+          columnNumber: 9
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 74,
+        columnNumber: 7
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "fieldset",
+        className: classes.formControl,
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormLabel__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          component: "legend",
+          children: "Specialisations"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 92,
+          columnNumber: 9
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormGroup__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: ARVR1,
+              onChange: handleChange,
+              name: "ARVR1",
+              color: "primary"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 95,
+              columnNumber: 22
+            }, this),
+            label: "AR/VR"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 94,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: Cybersecurity1,
+              onChange: handleChange,
+              name: "Cybersecurity1",
+              color: "primary"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 99,
+              columnNumber: 22
+            }, this),
+            label: "Cybersecurity"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 98,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: MachineLearningAndAI1,
+              onChange: handleChange,
+              name: "MachineLearningAndAI1",
+              color: "primary"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 103,
+              columnNumber: 22
+            }, this),
+            label: "Machine Learning and AI"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 102,
+            columnNumber: 11
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 93,
+          columnNumber: 9
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 91,
+        columnNumber: 7
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "fieldset",
+        className: classes.formControl,
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormLabel__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          component: "legend",
+          children: "Technical Skills"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 110,
+          columnNumber: 9
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormGroup__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: InterviewSkills1,
+              onChange: handleChange,
+              name: "InterviewSkills1",
+              color: "primary"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 113,
+              columnNumber: 22
+            }, this),
+            label: "Interview Skills"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 112,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: JobApplications1,
+              onChange: handleChange,
+              name: "JobApplications1",
+              color: "primary"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 117,
+              columnNumber: 22
+            }, this),
+            label: "Job Applications"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 116,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: WorkplaceEtiquette1,
+              onChange: handleChange,
+              name: "WorkplaceEtiquette1",
+              color: "primary"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 121,
+              columnNumber: 22
+            }, this),
+            label: "Workplace Etiquette"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 120,
+            columnNumber: 11
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 111,
+          columnNumber: 9
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 109,
+        columnNumber: 7
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "fieldset",
+        className: classes.formControl,
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormLabel__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          component: "legend",
+          children: "Other"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 127,
+          columnNumber: 9
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormGroup__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: Productivity1,
+              onChange: handleChange,
+              name: "Productivity1",
+              color: "primary"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 130,
+              columnNumber: 22
+            }, this),
+            label: "Productivity"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 129,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: Communication1,
+              onChange: handleChange,
+              name: "Communication1",
+              color: "primary"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 134,
+              columnNumber: 22
+            }, this),
+            label: "Communication"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 133,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: Music1,
+              onChange: handleChange,
+              name: "Music1",
+              color: "primary"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 138,
+              columnNumber: 22
+            }, this),
+            label: "Music"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 137,
+            columnNumber: 11
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 128,
+          columnNumber: 9
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 126,
+        columnNumber: 7
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 73,
+      columnNumber: 3
+    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+      className: classes.root,
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "fieldset",
+        className: classes.formControl,
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormLabel__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          component: "legend",
+          children: "Development"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 146,
+          columnNumber: 9
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormGroup__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: WebDevelopment2,
+              onChange: handleChange,
+              name: "WebDevelopment2"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 149,
+              columnNumber: 22
+            }, this),
+            label: "Web Development"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 148,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: GameDevelopment2,
+              onChange: handleChange,
+              name: "GameDevelopment2"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 153,
+              columnNumber: 22
+            }, this),
+            label: "Game Development"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 152,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: MobileDevelopment2,
+              onChange: handleChange,
+              name: "MobileDevelopment2"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 157,
+              columnNumber: 22
+            }, this),
+            label: "Mobile Development"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 156,
+            columnNumber: 11
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 147,
+          columnNumber: 9
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 145,
+        columnNumber: 7
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "fieldset",
+        className: classes.formControl,
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormLabel__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          component: "legend",
+          children: "Specialisations"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 164,
+          columnNumber: 9
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormGroup__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: ARVR2,
+              onChange: handleChange,
+              name: "ARVR2"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 167,
+              columnNumber: 22
+            }, this),
+            label: "AR/VR"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 166,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: Cybersecurity2,
+              onChange: handleChange,
+              name: "Cybersecurity2"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 171,
+              columnNumber: 22
+            }, this),
+            label: "Cybersecurity"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 170,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: MachineLearningAndAI2,
+              onChange: handleChange,
+              name: "MachineLearningAndAI2"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 175,
+              columnNumber: 22
+            }, this),
+            label: "Machine Learning and AI"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 174,
+            columnNumber: 11
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 165,
+          columnNumber: 9
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 163,
+        columnNumber: 7
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "fieldset",
+        className: classes.formControl,
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormLabel__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          component: "legend",
+          children: "Technical Skills"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 182,
+          columnNumber: 9
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormGroup__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: InterviewSkills2,
+              onChange: handleChange,
+              name: "InterviewSkills2"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 185,
+              columnNumber: 22
+            }, this),
+            label: "Interview Skills"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 184,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: JobApplications2,
+              onChange: handleChange,
+              name: "JobApplications2"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 189,
+              columnNumber: 22
+            }, this),
+            label: "Job Applications"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 188,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: WorkplaceEtiquette2,
+              onChange: handleChange,
+              name: "WorkplaceEtiquette2"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 193,
+              columnNumber: 22
+            }, this),
+            label: "Workplace Etiquette"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 192,
+            columnNumber: 11
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 183,
+          columnNumber: 9
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 181,
+        columnNumber: 7
+      }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        component: "fieldset",
+        className: classes.formControl,
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormLabel__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          component: "legend",
+          children: "Other"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 199,
+          columnNumber: 9
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormGroup__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: Productivity2,
+              onChange: handleChange,
+              name: "Productivity2"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 202,
+              columnNumber: 22
+            }, this),
+            label: "Productivity"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 201,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: Communication2,
+              onChange: handleChange,
+              name: "Communication2"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 206,
+              columnNumber: 22
+            }, this),
+            label: "Communication"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 205,
+            columnNumber: 11
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_8__["default"], {
+            control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              checked: Music2,
+              onChange: handleChange,
+              name: "Music2"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 210,
+              columnNumber: 22
+            }, this),
+            label: "Music"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 209,
+            columnNumber: 11
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 200,
+          columnNumber: 9
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 198,
+        columnNumber: 7
+      }, this)]
+    }, void 0, true, {
+      fileName: _jsxFileName,
+      lineNumber: 144,
+      columnNumber: 1
+    }, this)]
+  }, void 0, true, {
+    fileName: _jsxFileName,
+    lineNumber: 63,
+    columnNumber: 1
+  }, this);
+}
+
+_s(CheckboxesGroup, "pNLB+7r0fi2apJfwtbXHcdSkwxE=", false, function () {
+  return [useStyles];
+});
+
+_c = CheckboxesGroup;
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "CheckboxesGroup");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ })
+
+})
+//# sourceMappingURL=main.fb3b4a80697626ca4fa1.hot-update.js.map

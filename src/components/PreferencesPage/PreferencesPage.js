@@ -61,10 +61,12 @@ const useStyles = makeStyles((theme) => ({
   
 return(
 <div style={{
+        backgroundImage: `url(${LoginBackground})`,
         width: '100vw',
         height: '100vh',
-        backgroundImage: `url(${LoginBackground})`,
-        backgroundSize: 'cover' }}>
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        }}>
   <div className={classes.root}>
       <FormControl component="fieldset" className={classes.formControl}>
         <FormLabel component="legend">Development</FormLabel>
