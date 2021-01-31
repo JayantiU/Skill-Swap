@@ -10,7 +10,9 @@ function Dashboard() {
         <Link to="/conference">
           <Button className="video_button">Join Video</Button>
         </Link>
-        <Button className="pref_button">Preferences</Button>
+        <Link to="/preferences">
+          <Button className="pref_button">Preferences</Button>
+        </Link>
       </div>
     </div>
   );

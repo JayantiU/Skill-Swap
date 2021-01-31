@@ -30,10 +30,14 @@ function LoginPage() {
   };
 
   return (
-
     <div className="other">
       <div className="login-page">
-        <input placeholder="Email" type="text" className="input" onChange={handleEmail} />
+        <input
+          placeholder="Email"
+          type="text"
+          className="input"
+          onChange={handleEmail}
+        />
         <br></br>
         <input
           placeholder="Password"
@@ -49,9 +53,9 @@ function LoginPage() {
           Don't have an account?{" "}
           <span className="input">
             {" "}
-            
-            <Link to="/register" className ="reallyobscure" >Sign Up
-            </Link >
+            <Link to="/register" className="reallyobscure">
+              Sign Up
+            </Link>
           </span>
         </div>
       </div>

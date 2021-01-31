@@ -13,7 +13,10 @@ let peerConnection = null;
 let localStream = null;
 let remoteStream = null;
 let roomDialog = null;
+let coolDialog = null;
 let roomId = null;
+let coolId = null;
+let roomRef = null;
 
 function init() {
   document.querySelector("#cameraBtn").addEventListener("click", openUserMedia);
@@ -21,13 +24,14 @@ function init() {
   document.querySelector("#createBtn").addEventListener("click", createRoom);
   document.querySelector("#joinBtn").addEventListener("click", joinRoom);
   roomDialog = new mdc.dialog.MDCDialog(document.querySelector("#room-dialog"));
+  coolDialog = new mdc.dialog.MDCDialog(document.querySelector("#cool-dialog"));
 }
 
-async function createRoom() {
+async function cool(id) {
   document.querySelector("#createBtn").disabled = true;
   document.querySelector("#joinBtn").disabled = true;
   const db = firebase.firestore();
-  const roomRef = await db.collection("rooms").doc();
+  roomRef = await db.collection("rooms").doc(`${id}`);
 
   console.log("Create PeerConnection with configuration: ", configuration);
   peerConnection = new RTCPeerConnection(configuration);
@@ -65,9 +69,6 @@ async function createRoom() {
   await roomRef.set(roomWithOffer);
   roomId = roomRef.id;
   console.log(`New room created with SDP offer. Room ID: ${roomRef.id}`);
-  document.querySelector(
-    "#currentRoom"
-  ).innerText = `Current room is ${roomRef.id} - You are the caller!`;
   // Code for creating a room above
 
   peerConnection.addEventListener("track", (event) => {
@@ -99,6 +100,23 @@ async function createRoom() {
       }
     });
   });
+}
+
+async function createRoom() {
+  document.querySelector("#createBtn").disabled = true;
+  document.querySelector("#joinBtn").disabled = true;
+
+  document.querySelector("#confirmCreateBtn").addEventListener(
+    "click",
+    async () => {
+      coolId = await document.querySelector("#cool-id").value;
+      console.log("Create room: ", coolId);
+      await cool(coolId);
+    },
+    { once: true }
+  );
+  coolDialog.open();
+
   // Listen for remote ICE candidates above
 }
 
@@ -111,9 +129,6 @@ function joinRoom() {
     async () => {
       roomId = document.querySelector("#room-id").value;
       console.log("Join room: ", roomId);
-      document.querySelector(
-        "#currentRoom"
-      ).innerText = `Current room is ${roomId} - You are the callee!`;
       await joinRoomById(roomId);
     },
     { once: true }

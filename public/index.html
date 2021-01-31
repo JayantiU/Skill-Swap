@@ -12,6 +12,7 @@
     <script defer src="/__/firebase/8.2.5/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
     <script defer src="/__/firebase/8.2.5/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.2.5/firebase-auth.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
 
@@ -40,7 +41,8 @@
       <button id="stop">Stop</button>
   </div>
   <div>
-      <span id="currentRoom"></span>
+      <span id="currentRoom">
+      </span>
   </div>
   <div id="videos">
       <video id="localVideo" muted autoplay playsinline></video>
@@ -60,7 +62,7 @@
                   Enter ID for room to join:
                   <div class="mdc-text-field">
                       <input type="text" id="room-id" class="mdc-text-field__input">
-                      <label class="mdc-floating-label" for="my-text-field">Room ID</label>
+                      <label class="mdc-floating-label" for="my-text-field"></label>
                       <div class="mdc-line-ripple"></div>
                   </div>
               </div>
@@ -71,6 +73,36 @@
                   <button id="confirmJoinBtn" type="button" class="mdc-button mdc-dialog__button"
                           data-mdc-dialog-action="yes">
                       <span class="mdc-button__label">Join</span>
+                  </button>
+              </footer>
+          </div>
+      </div>
+      <div class="mdc-dialog__scrim"></div>
+  </div>
+  <div class="mdc-dialog"
+      id="cool-dialog"
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="my-dialog-title"
+      aria-describedby="my-dialog-content">
+      <div class="mdc-dialog__container">
+          <div class="mdc-dialog__surface">
+              <h2 class="mdc-dialog__title" id="my-dialog-title">Create room</h2>
+              <div class="mdc-dialog__content" id="my-dialog-content">
+                  Enter Email:
+                  <div class="mdc-text-field">
+                      <input type="text" id="cool-id" class="mdc-text-field__input">
+                      <label class="mdc-floating-label" for="my-text-field"></label>
+                      <div class="mdc-line-ripple"></div>
+                  </div>
+              </div>
+              <footer class="mdc-dialog__actions">
+                  <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="no">
+                      <span class="mdc-button__label">Cancel</span>
+                  </button>
+                  <button id="confirmCreateBtn" type="button" class="mdc-button mdc-dialog__button"
+                          data-mdc-dialog-action="yes">
+                      <span class="mdc-button__label">Add</span>
                   </button>
               </footer>
           </div>
