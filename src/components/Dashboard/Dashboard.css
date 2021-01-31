@@ -13,34 +13,45 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 }
 
 .video_button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px 18px;
-
+  padding: 36px 54px;
+  font-size: 26px;
+  border-radius: 15%;
+  color: beige;
   position: absolute;
-  width: 107px;
-  height: 42px;
-  left: calc(50% - 107px / 2 + 69px);
-  top: 600px;
-
+  /* width: 107px;
+  height: 42px; */
+  /* ?left: calc(50% - 107px / 2 + 69px); */
+  top: 500px;
+  right: 30%;
+  border: none;
   background: #a776f7;
+  text-align: center;
 }
 
 .pref_button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px 18px;
-
+  padding: 36px 54px;
+  font-size: 26px;
+  border-radius: 15%;
+  left: 30%;
+  border: none;
   position: absolute;
-  width: 118px;
-  height: 42px;
-  left: calc(50% - 118px / 2 - 67.5px);
-  top: 600px;
+  /* width: 118px;
+  height: 42px; */
+  /* left: calc(50% - 118px / 2 - 67.5px); */
+  top: 500px;
+  text-align: center;
+  border-radius: 15%;
+  color: rgb(109, 109, 95);
 
   background: #d9a4e1;
 }
