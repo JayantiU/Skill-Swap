@@ -1,4 +1,4 @@
-import './App.css';
+
 import RegisterPage from './components/RegisterPage/RegisterPage'
 import LoginPage from './components/LoginPage/LoginPage';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
