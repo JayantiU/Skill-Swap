@@ -12,7 +12,7 @@ function RegisterPage() {
         <span>&nbsp; &nbsp; &nbsp;</span>
         <input placeholder="Password" type="password" />
         <br></br>
-        <button>Submit</button>
+        <button className="button-submit">Submit</button>
       </div>
     </div>
   );

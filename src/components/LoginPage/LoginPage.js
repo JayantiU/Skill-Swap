@@ -10,7 +10,7 @@ function LoginPage() {
         <br></br>
         <input placeholder="Password" type="password" />
         <br></br>
-        <button>Login</button>
+        <button className="button-login">Login</button>
 
         <div className="sign-up-text">
           Don't have an account?{" "}
