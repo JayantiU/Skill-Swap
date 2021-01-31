@@ -36,8 +36,7 @@
           <i class="material-icons mdc-button__icon" aria-hidden="true">close</i>
           <span class="mdc-button__label">Hangup</span>
       </button>
-      <button id="start">Start</button>
-      <button id="stop">Stop</button>
+     
         
   </div>
   <div>
@@ -47,7 +46,21 @@
       <video id="localVideo" muted autoplay playsinline></video>
       <video id="remoteVideo" autoplay playsinline></video>
       <video autoplay id="video"></video>
+     
+     
   </div>
+  <div class="share-container">
+    <button class="mdc-button mdc-button--raised" id="start"><span class="mdc-button__label">Start ScreenShare</span></button>
+    <button class="mdc-button mdc-button--raised" id="stop"><span class="mdc-button__label">Stop ScreenShare</span></button>
+  </div>
+  <style>
+      .share-container{
+          padding-left: 15px;
+      }
+  </style>
+
+
+
   <div class="mdc-dialog"
       id="room-dialog"
       role="alertdialog"
