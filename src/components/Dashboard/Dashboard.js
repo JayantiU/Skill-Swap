@@ -5,12 +5,13 @@ import Button from "react-bootstrap/Button";
 
 function Dashboard() {
   return (
-    <div class="landing-container">
-      <Link to="/conference">
-        <Button className="video_button">Join Video</Button>
-      </Link>
-
-      <Button className="pref_button">Preferences</Button>
+    <div className="start">
+      <div class="landing-container">
+        <Link to="/conference">
+          <Button className="video_button">Join Video</Button>
+        </Link>
+        <Button className="pref_button">Preferences</Button>
+      </div>
     </div>
   );
 }
