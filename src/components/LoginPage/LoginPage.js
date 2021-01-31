@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./LoginPage.css";
-import firebase from "firebase";
+import firebase from "../../config";
 
 function LoginPage() {
   const [email, setEmail] = useState("");
@@ -9,12 +9,12 @@ function LoginPage() {
 
   let history = useHistory();
 
-  const handleEmail = (value) => {
-    setEmail(value);
+  const handleEmail = (event) => {
+    setEmail(event.target.value);
   };
 
-  const handlePassword = (value) => {
-    setPassword(value);
+  const handlePassword = (event) => {
+    setPassword(event.target.value);
   };
 
   const handleLogin = () => {
