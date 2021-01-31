@@ -22,7 +22,7 @@ function LoginPage() {
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then(() => {
-        history.push("/conference");
+        history.push("/dashboard");
       })
       .catch((error) => {
         alert(error);

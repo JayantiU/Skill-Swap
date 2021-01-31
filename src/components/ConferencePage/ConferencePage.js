@@ -4,6 +4,8 @@ import firebase from "../../config";
 import { useHistory } from "react-router-dom";
 
 function ConferencePage() {
+  var count = 0;
+
   let history = useHistory();
 
   useEffect(() => {
