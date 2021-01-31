@@ -36,9 +36,8 @@
           <i class="material-icons mdc-button__icon" aria-hidden="true">close</i>
           <span class="mdc-button__label">Hangup</span>
       </button>
-      <button id="start">Start</button>
+      <button onClick="showScreen()" id="start">Start</button>
       <button id="stop">Stop</button>
-        
   </div>
   <div>
       <span id="currentRoom"></span>
@@ -46,7 +45,7 @@
   <div id="videos">
       <video id="localVideo" muted autoplay playsinline></video>
       <video id="remoteVideo" autoplay playsinline></video>
-      <video autoplay id="video"></video>
+      <video autoplay id="video" style="display:none"></video>
   </div>
   <div class="mdc-dialog"
       id="room-dialog"
@@ -88,11 +87,6 @@
    
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-
-
-
 
     <style>
         #video{
@@ -136,13 +130,21 @@
             let tracks = videoElement.srcObject.getTracks()
             tracks.forEach(track => track.stop())
             videoElement.srcObject = null;
+            var x = document.getElementById("video");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            }
         }
 
 
     </script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-
+    <script>
+        function showScreen() {
+          var x = document.getElementById("video");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          }
+        }
+    </script>
 </html>
