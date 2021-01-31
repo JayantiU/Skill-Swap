@@ -1,4 +1,5 @@
 import React from "react";
+import firebase from "../../firebase-config"
 import Checkbox from "@material-ui/core/Checkbox";
 import LoginBackground from "./Preferences.png";
 import { makeStyles } from "@material-ui/core/styles";
@@ -8,6 +9,7 @@ import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import { Link } from "react-router-dom";
 import "./PreferencesPage.css";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -25,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 export default function CheckboxesGroup() {
   const classes = useStyles();
   const [state, setState] = React.useState({
-    WebDevelopment1: true,
+    WebDevelopment1: false,
     GameDevelopment1: false,
     MobileDevelopment1: false,
     ARVR1: false,
@@ -51,13 +53,73 @@ export default function CheckboxesGroup() {
     Music2: false,
   });
 
-  const handleChange = (event) => {
-    setState({ ...state, [event.target.name]: event.target.checked });
-  };
+  //const handleChange = (event) => {
+  //  setState({ ...state, [event.target.name]: event.target.checked });
+ // };
+//  /var email = null;
+
+var letters = [];
+
+
+ firebase.auth().onAuthStateChanged((user) => {
+   if(user){
+//     email=user.email;
+   }
+ });
+const handleChange = async (event) => {
+  const db = await firebase.firestore();
+  if(false){setState({ ...state, [event.target.name]: event.target.checked });
+
+ // db.collection("preferences").doc(`${email}`).set(state)
+ // console.log ("log")
+
+  //const citiesRef = db.collection('citipreferenceses');
+  //const snapshot = await citiesRef.where('capital', '==', false).get();
+  }
+
+  else{
+    
+    db.collection("preferences")
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            // doc.data() is never undefined for query doc snapshots
+            console.log(doc.id, " => ", doc.data());// eslint-disable-next-line
+            const{a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x} = doc.data();
+            letters.push([a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x])
+        });
+    })
+  }
   
+  /*
+else{setState({ ...state, [event.target.name]: event.target.checked });
+const db = firebase.firestore();
+db.collection("preferences").doc(`${email}`).update({
+  [event.target.name]: "false"
+})
+.then(function() {
+console.log("Document successfully written!");
+})
+.catch(function(error) {
+console.error("Error writing document: ", error);
+});
+}*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
     const {WebDevelopment1, GameDevelopment1, MobileDevelopment1, ARVR1, Cybersecurity1, MachineLearningAndAI1, InterviewSkills1, JobApplications1,WorkplaceEtiquette1, Productivity1, Communication1, Music1,
            WebDevelopment2, GameDevelopment2, MobileDevelopment2, ARVR2, Cybersecurity2, MachineLearningAndAI2, InterviewSkills2, JobApplications2, WorkplaceEtiquette2, Productivity2, Communication2, Music2} = state;
-  
+           
 return(
 <div style={{
         backgroundImage: `url(${LoginBackground})`,
@@ -71,11 +133,11 @@ return(
         <FormLabel component="legend">Development</FormLabel>
         <FormGroup>
           <FormControlLabel
-            control={<Checkbox checked={WebDevelopment1} onChange={handleChange} name="WebDevelopment1" color="primary"/>}
-            label="Web Development"
-          />
+            control={<Checkbox checked={WebDevelopment1} onChange={handleChange}  name="WebDevelopment1" color="primary"/>}
+            label="Web Development"            
+          ><div> control={<Checkbox checked={WebDevelopment1} onChange={handleChange}  name="WebDevelopment1" color="primary"/>}</div></FormControlLabel>
           <FormControlLabel
-            control={<Checkbox checked={GameDevelopment1} onChange={handleChange} name="GameDevelopment1" color="primary"/>}
+            control={<Checkbox checked={GameDevelopment1} onChange={handleChange } name="GameDevelopment1" color="primary"/>}
             label="Game Development"
           />
           <FormControlLabel

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./LoginPage.css";
-import firebase from "../../config";
+import firebase from "../../firebase-config";
 
 function LoginPage() {
   const [email, setEmail] = useState("");

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import "./RegisterPage.css";
-import firebase from "../../config";
+import firebase from "../../firebase-config";
 
 function RegisterPage() {
   const [email, setEmail] = useState("");
@@ -31,9 +31,9 @@ function RegisterPage() {
 
   return (
     <div className="register">
-      <div className="register-page">{/*eslint-disable-next-line*/}
-        <input className="name" placeholder="Name" type="text" className="smexy"  />{/* //eslint-disable-next-line*/}
-        <span>&nbsp; &nbsp; &nbsp;</span>{/*eslint-disable-next-line*/}
+      <div className="register-page">
+        <input  type="text" className="smexy"  />
+        <span>&nbsp; &nbsp; &nbsp;</span>
         <input placeholder="Email" type="text" className="smexy" onChange={handleEmail} />
         <span>&nbsp; &nbsp; &nbsp;</span>
         <input
