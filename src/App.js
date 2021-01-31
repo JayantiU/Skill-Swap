@@ -1,16 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import RegisterPage from './components/RegisterPage'
-import LoginPage from './components/LoginPage';
-
+import RegisterPage from './components/RegisterPage/RegisterPage'
+import LoginPage from './components/LoginPage/LoginPage';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 
 function App() {
   return (
-    <div className="App">
-      <RegisterPage/>
-      <LoginPage/>
-    </div>
+    <Router>
+        <div className="App">
+          <Switch>
+            <Route path="/" exact component={LoginPage}/>
+            <Route path="/register" component={RegisterPage}/>
+          </Switch>
+      </div>
+    </Router>
   );
 }
 
