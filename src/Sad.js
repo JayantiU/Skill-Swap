@@ -1,4 +1,4 @@
-function myFunction() {
+function sad() {
   var x = document.getElementById("cool");
   if (
     window.location.href === "https://skill-swap-2fe5e.web.app/conference" ||
@@ -10,4 +10,4 @@ function myFunction() {
   }
 }
 
-myFunction();
+export default sad;
