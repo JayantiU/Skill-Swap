@@ -1,10 +1,10 @@
-//import React, { useEffect } from "react";
-//import sad from "../../Sad";
-//import firebase from "../../firebase-config";
-//import { useHistory } from "react-router-dom";
+import React, { useEffect } from "react";
+import sad from "../../Sad";
+import firebase from "../../firebase-config";
+import { useHistory } from "react-router-dom";
 
 function ConferencePage() {
- /*  let history = useHistory();
+  let history = useHistory();
 
   useEffect(() => {
     firebase.auth().onAuthStateChanged((user) => {
@@ -18,11 +18,7 @@ function ConferencePage() {
     });
   }, []);
 
-  return (
-    <div>
-      <div>Big Sad</div>
-    </div>
-  );*/
+  return <div></div>;
 }
 
 export default ConferencePage;
