@@ -1,6 +1,5 @@
 import React from "react";
 import "./RegisterPage.css";
-import LoginBackground from "./register.png";
 import { Link } from "react-router-dom";
 
 function RegisterPage() {
@@ -13,7 +12,9 @@ function RegisterPage() {
         <span>&nbsp; &nbsp; &nbsp;</span>
         <input placeholder="Password" type="password" />
         <br></br>
-        <Link to="/"><button className="button-submit">Submit</button></Link>
+        <Link to="/">
+          <button className="button-submit">Submit</button>
+        </Link>
       </div>
     </div>
   );
