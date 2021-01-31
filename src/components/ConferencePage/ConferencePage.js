@@ -20,11 +20,7 @@ function ConferencePage() {
     });
   }, []);
 
-  return (
-    <div>
-      <div>Big Sad</div>
-    </div>
-  );
+  return <div></div>;
 }
 
 export default ConferencePage;

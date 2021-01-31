@@ -1,5 +1,5 @@
-import React from 'react';
-import Dashboard from './components/Dashboard/Dashboard';
+import React from "react";
+import Dashboard from "./components/Dashboard/Dashboard";
 import RegisterPage from "./components/RegisterPage/RegisterPage";
 import LoginPage from "./components/LoginPage/LoginPage";
 import ConferencePage from "./components/ConferencePage/ConferencePage";
