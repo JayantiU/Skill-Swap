@@ -5,7 +5,7 @@
 2. Run `npm install`
 3. Setup a Firebase project with Auth, Hosting, and Firestore and paste your credentials into the firebase-config.js file
 4. Run `npm run build`
-5. Run firebase deploy --only Hosting, Firestore
+5. Run `firebase deploy --only Hosting, Firestore`
 
 ## Inspiration 💡
 While learning from instructors and more experienced people is a great way to gain valuable skills, it can be a little intimidating. Sometimes, the most valuable way to actually learn something is from our peers. But, finding people with the desired skill set, setting up a meeting time and deciding which platform to use can take a lot of time. Skill Swap was created to eliminate these hurdles; we have streamlined this process with a simple and easy-to-navigate web app featuring intuitive design and awesome features. Skill Swap is the perfect web app for women in STEM looking to simply learn from their peers in a streamlined, modern fashion. 
