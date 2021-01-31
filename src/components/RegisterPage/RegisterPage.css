@@ -24,7 +24,7 @@ input{
     color: darkslateblue;
 }
 
-button{
+.button-submit{
     padding: 12px;
     border: none;
     background-color: #9A6FB4;
