@@ -80,6 +80,70 @@
 
 <div id="root"></div>
 </body>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+
+
+
+    <style>
+        #video{
+            border: 1px solid #999;
+            width: 98%;
+            max-width: 860px;
+        }
+        
+    </style>
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <video autoplay id="video"></video>
+
+    <script>
+        const videoElement = document.getElementById("video")
+        const start = document.getElementById("start")
+        const stop = document.getElementById("stop")
+
+        start.addEventListener("click", e => {
+            startCapture()
+        }, false)
+        stop.addEventListener("click", e => {
+            stopCapture()
+        }, false)
+
+        var displayMediaOptions = {
+            video:{
+                cursor: 'always'
+            },
+            audio: true
+        }
+        async function startCapture(){
+            try{
+                 videoElement.srcObject = await navigator.mediaDevices.getDisplayMedia(displayMediaOptions)       
+            }
+            catch(e){
+                console.log(e);
+            }
+        }
+
+        function stopCapture(e){
+            let tracks = videoElement.srcObject.getTracks()
+            tracks.forEach(track => track.stop())
+            videoElement.srcObject = null;
+        }
+
+
+    </script>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
 
 </html>

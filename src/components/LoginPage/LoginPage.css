@@ -24,7 +24,7 @@ input{
 ::placeholder{
     color: darkslateblue;
 }
-button{
+.button-login{
     padding: 12px;
     border: none;
     background-color: #9A6FB4;
