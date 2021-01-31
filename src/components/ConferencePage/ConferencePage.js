@@ -17,7 +17,18 @@ function ConferencePage() {
     });
   }, []);
 
-  return <div></div>;
+  return (
+    <>
+      <div className="stuff">
+        <div className="className">
+          <h3 style={{ marginLeft: "20px" }}>You have been matched!</h3>
+          <h4 style={{ marginLeft: "20px" }}>
+            Your room email is bob@gmail.com
+          </h4>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default ConferencePage;
