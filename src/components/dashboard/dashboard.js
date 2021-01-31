@@ -15,10 +15,11 @@ function Dashboard() {
             </Button>
         </Link>
       
-      
-      <Button className="pref_button">
-        Preferences
-      </Button>
+        <Link to="/preferences">
+          <Button className="pref_button">
+              Preferences
+          </Button>
+      </Link>
     </div>
     
   ); 

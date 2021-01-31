@@ -6,7 +6,8 @@ import FormLabel from '@material-ui/core/FormLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-
+import { Link } from "react-router-dom";
+import './PreferencesPage.css'
 const useStyles = makeStyles((theme) => ({
     root: {
       display: 'flex',
@@ -206,8 +207,13 @@ return(
             label="Music"
           />
         </FormGroup>
+
+
       </FormControl>
+     
+
     </div>
+    <Link to="/conference"><button className="button-submit center">Submit</button></Link>
     </div>
 ); 
 }
