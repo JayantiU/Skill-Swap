@@ -11,11 +11,8 @@ import { Link } from "react-router-dom";
 import "./PreferencesPage.css";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-  },
   formControl: {
-    margin: theme.spacing(5),
+    margin: auto,
     textAlign: "left",
     top: "210px",
     left: "150px",
